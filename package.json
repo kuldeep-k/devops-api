@@ -1,0 +1,25 @@
+{
+  "name": "devops-api",
+  "version": "1.0.0",
+  "description": "Devops Project - API Subproject",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuldeep-k/devops-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kuldeep-k/devops-api/issues"
+  },
+  "homepage": "https://github.com/kuldeep-k/devops-api#readme"
+}
