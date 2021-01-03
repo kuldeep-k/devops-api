@@ -3,7 +3,10 @@ const mongoose = require("mongoose");
 const bodyparser = require("body-parser");
 mongoose.set('debug', true);
 const app = express();
-mongoose.connect('mongodb://localhost:27017/userauthtest', {useNewUrlParser:true}).then(() => {
+const dbserv = "mongodb";
+const dbdns = 'mongodb://' + dbserv + ':27017/userauthtest';
+console.log(dbdns);
+mongoose.connect(dbdns, {useNewUrlParser:true}).then(() => {
 console.log("DB Connected");
 executeAPIs();
 }).catch((err) => {
